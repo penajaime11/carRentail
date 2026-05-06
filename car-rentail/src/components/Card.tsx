@@ -1,18 +1,20 @@
-import { useState } from 'react'
-export default function Card() {
-    //react hooks
+import { useState } from "react"
+export default function Card(){
+    //React Hooks
     var cont:number=10
-    const [contador, setContador] = useState(10)
+    const [contador, setContador] = useState(5)
 
-    const aumentar=()=>{
+    const aumentar = ()=>{
         cont++
-        console.log("hola", cont)
+        console.log("Hola" , cont)
         setContador(contador+1)
     }
-  return (
-    <>
-      <h1>Card{contador}</h1>
-      <button onClick={aumentar}>Pene</button>
-    </>
-  );
+    return (
+       <>
+            <h1>Card {contador}</h1>
+            <button onClick={aumentar}>Hola</button>
+       
+       </>
+ 
+    )
 }
